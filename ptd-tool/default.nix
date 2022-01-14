@@ -10,8 +10,8 @@ buildGoApplication rec {
   buildInputs = [ jq ];
   nativeBuildInputs = [ unzip ];
   src = fetchurl {
-    url = "https://gitee.com/binaryeater/ptd-tool/repository/archive/${version}.zip";
-    sha256 = "1nn48cidi8s6fqqa67vz1dc8ghxba9kra4ia93q3jw9jmjz9q6ws";
+    url = "https://github.com/d-housekeeper/ptd-tool-binaryeater/archive/${version}.zip";
+    sha256 = "10ynipxrfyyhf7s66a4k5r6gi8qva677gyj2vyjcmw4x59vq67bv";
   };
   modules = ./gomod2nix.toml;
   postBuild = ''
