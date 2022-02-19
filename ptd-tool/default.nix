@@ -10,8 +10,8 @@ buildGoApplication rec {
   buildInputs = [ jq ];
   nativeBuildInputs = [ unzip ];
   src = fetchurl {
-    url = "https://github.com/d-housekeeper/ptd-tool/archive/${version}.zip";
-    sha256 = "10ynipxrfyyhf7s66a4k5r6gi8qva677gyj2vyjcmw4x59vq67bv";
+    url = "https://github.com/d-housekeeper/ptd-tool-orig/archive/${version}.zip";
+    sha256 = "04wcdjj4690qa07kcpv65brgjkkvizj1idlb2d2p60b794g0rwrn";
   };
   modules = ./gomod2nix.toml;
   postBuild = ''
